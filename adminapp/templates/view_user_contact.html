@@ -4,7 +4,8 @@
 <html lang="en" class="material-style layout-fixed">
 
 <head>
-    <title>Bhumlu | B4+ admin template by Srthemesvilla</title>
+    <title>JKPATEL | Admin app</title>
+
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,7 +13,7 @@
     <meta name="description" content="Bhumlu Bootstrap admin template made using Bootstrap 4, it has tons of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
     <meta name="keywords" content="Bhumlu, bootstrap admin template, bootstrap admin panel, bootstrap 4 admin template, admin template">
     <meta name="author" content="Srthemesvilla" />
-    <link rel="icon" type="image/x-icon" href="{% static 'admin/img/favicon.ico' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'admin/img/logo.jpg' %}">
 
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
@@ -66,7 +67,7 @@
                 <!-- Brand demo (see assets/css/demo/demo.css) -->
                 <div class="app-brand demo">
                     <span class="app-brand-logo demo">
-                        <img src="{% static 'admin/img/jklogo.png' %}" alt="Brand Logo" class="img-fluid rounded" style="width: 30px; height: 30px;">
+                        <img src="{% static 'admin/img/logo.jpg' %}" alt="Brand Logo" class="img-fluid rounded" style="width: 30px; height: 30px;">
                     </span>
                     <a href="/adminapp/dashboard/" class="app-brand-text demo sidenav-text font-weight-normal ml-2">JKPATEL</a>
                     <a href="javascript:" class="layout-sidenav-toggle sidenav-link text-large ml-auto">
@@ -477,9 +478,9 @@
                         <h4 class="font-weight-bold py-3 mb-0">User Contact Data</h4>
                         <div class="text-muted small mt-0 mb-4 d-block breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#"><i class="feather icon-home"></i></a></li>
-                                <li class="breadcrumb-item" >Tables</li>
-                                <li class="breadcrumb-item active" >View User Contact Data</li>
+                                <li class="breadcrumb-item"><a href="/adminapp/dashboard"><i class="feather icon-home"></i></a></li>
+                                <li class="breadcrumb-item">Manage User Contact</li>
+                                <li class="breadcrumb-item active">View User Contact</li>
                             </ol>
                         </div>
 
@@ -517,7 +518,7 @@
 
                     
                                     <td>
-                                        <a href="/adminapp/edit_user_contact/{{i.id}}" class="btn text-info"><i class="bi bi-pencil-square"></i></a>
+                                        <!-- <a href="/adminapp/edit_user_contact/{{i.id}}" class="btn text-info"><i class="bi bi-pencil-square"></i></a> -->
                                         <a href="/adminapp/delete_user_contact/{{i.id}}" class="btn text-danger" onclick="return confirm('Are you sure you want to delete this record?');"> <i class="bi bi-trash"></i></a>
                                     </td>
                                         

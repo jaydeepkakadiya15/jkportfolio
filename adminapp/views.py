@@ -61,8 +61,11 @@ def dashboard(request):
     
     user = admin_register.objects.get(id= request.session['user_id']) 
 
+    all_bio = profile_bio.objects.all()
 
-    return render(request, 'dashboard.html' , {'user': user})
+
+
+    return render(request, 'dashboard.html' , {'user': user, 'all_bio': all_bio})
 
 def add_data(request):
 
